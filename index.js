@@ -16,7 +16,7 @@ app.use('/', express.static('./client/build'))
 
 const port = process.env.PORT || 3050
 app.listen(port, () => {
-  console.log(`listening at http://localhost:${port}`)
+  console.log(`listening at ${port}`)
 })
 
 export default app
