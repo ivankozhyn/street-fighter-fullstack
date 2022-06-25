@@ -1,0 +1,19 @@
+.selectedFighter,
+.selectedFighter div {
+  margin: 5px;
+}
+
+.selectedFighter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.selectedFighterImg {
+  max-height: 120px;
+}
+
+.details {
+  font-weight: 500;
+  margin-right: 5px;
+}

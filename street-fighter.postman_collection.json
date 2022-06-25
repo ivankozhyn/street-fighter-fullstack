@@ -1,0 +1,418 @@
+{
+	"info": {
+		"_postman_id": "4ecfc944-8e1f-49d1-bce8-15030f2c10d5",
+		"name": "street-fighter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6226640"
+	},
+	"item": [
+		{
+			"name": "fighter",
+			"item": [
+				{
+					"name": "fighters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fighters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fighters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fighter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fighters/e1caed4e-ae81-4332-8495-fe222bd93db2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fighters",
+								"e1caed4e-ae81-4332-8495-fe222bd93db2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fighter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"fighter\",\n    \"health\": 90,\n    \"power\": 4,\n    \"defense\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/fighters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fighters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fighter",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fighters/f7423e1a-86c7-4d94-886c-47f89fa17f21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fighters",
+								"f7423e1a-86c7-4d94-886c-47f89fa17f21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fighter",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"yutuy\",\n    \"health\": 99,\n    \"power\": 50,\n    \"defense\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/fighters/74bdfed9-d9e2-4b63-9493-f1cf3f4263e7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fighters",
+								"74bdfed9-d9e2-4b63-9493-f1cf3f4263e7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"qwerty22@gmail.com\",\n    \"password\": \"qwerty22\",\n    \"firstName\": \"qwerty22\",\n    \"lastName\": \"qwerty221\",\n    \"phoneNumber\": \"+380931234568\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"qwe2772rty22@gmail.com\",\n    \"password\": \"qw888e22rty22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"111@gmail.com\",\n    \"password\": \"uyiuyuy\",\n    \"firstName\": \"hguguyg\",\n    \"lastName\": \"ghiuhgiuhg\",\n    \"phoneNumber\": \"+380937654321\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/users/ee3786da-f32a-4573-9a6e-f574d18340ef",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"users",
+								"ee3786da-f32a-4573-9a6e-f574d18340ef"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/users/97093a1f-e109-494f-9e52-8fe013e7bf77",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"users",
+								"97093a1f-e109-494f-9e52-8fe013e7bf77"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/users/13b158b5-9016-427d-a3e0-dc37b38df918",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"users",
+								"13b158b5-9016-427d-a3e0-dc37b38df918"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "fight",
+			"item": [
+				{
+					"name": "fights",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fights",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fights"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fight",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fights/ba17e213-fef3-4ae6-b9de-e93b59c147d9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fights",
+								"ba17e213-fef3-4ae6-b9de-e93b59c147d9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fighter1\": \"8c2a53b9-553e-403d-9b67-23eb343d911e\",\n    \"fighter2\": \"ddda23cd-0656-4fa5-b46b-99e94be9cf0f\",\n    \"log\": [\n        {\n            \"fighter1Shot\": 30,\n            \"fighter2Shot\": 29,\n            \"fighter1Health\": 70,\n            \"fighter2Health\": 10\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/fights",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fights"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fight",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fighter1\": \"id1\",\n    \"fighter2\": \"id2\",\n    \"log\": [\n        {\n            \"fighter1Shot\": 0,\n            \"fighter2Shot\": 0,\n            \"fighter1Health\": 0,\n            \"fighter2Health\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3050/api/fights/ba17e213-fef3-4ae6-b9de-e93b59c147d9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fights",
+								"ba17e213-fef3-4ae6-b9de-e93b59c147d9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fight",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3050/api/fights/ba17e213-fef3-4ae6-b9de-e93b59c147d9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3050",
+							"path": [
+								"api",
+								"fights",
+								"ba17e213-fef3-4ae6-b9de-e93b59c147d9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

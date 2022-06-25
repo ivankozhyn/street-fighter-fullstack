@@ -1,0 +1,19 @@
+.arena___battlefield {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.arena___right-fighter img {
+  transform: scaleX(-1);
+}
+
+.arena___fighter img {
+  height: 480px;
+}
+
+.arena___versus-sign {
+  max-width: 210px;
+  max-height: 180px;
+}

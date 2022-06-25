@@ -1,0 +1,9 @@
+#new-fighter {
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+#new-fighter > * {
+  margin: 1rem;
+}
