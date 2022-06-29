@@ -1,7 +1,6 @@
 import { fightRepository } from '../repositories/fightRepository.js'
 
 class FightersService {
-  // OPTIONAL TODO: Implement methods to work with fights
   search(search) {
     const item = fightRepository.getOne(search)
     if (!item) {

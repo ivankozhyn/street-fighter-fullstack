@@ -1,9 +1,9 @@
 import { fight } from '../models/fight.js'
 
 export const createFightValid = (req, res, next) => {
-  let { id, ...rest } = fight
+  const { id, ...rest } = fight
 
-  let data =
+  const data =
     Object.keys(req.body).length !== Object.keys(rest).length
       ? { ...rest, ...req.body }
       : req.body

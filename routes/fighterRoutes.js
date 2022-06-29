@@ -8,7 +8,6 @@ import {
 
 const router = Router()
 
-// TODO: Implement route controllers for fighter
 router.get(
   '/',
   (req, res, next) => {

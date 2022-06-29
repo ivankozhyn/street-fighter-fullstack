@@ -10,7 +10,6 @@ router.post(
   signInUserValid,
   (req, res, next) => {
     try {
-      // TODO: Implement login action (get the user if it exist with entered credentials)
       if (!res?.is400Error) {
         const user = AuthService.login(
           user =>

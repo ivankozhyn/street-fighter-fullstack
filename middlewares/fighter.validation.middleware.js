@@ -1,14 +1,13 @@
 import { fighter } from '../models/fighter.js'
 
 export const createFighterValid = (req, res, next) => {
-  // TODO: Implement validatior for fighter entity during creation
-  let { id, ...rest } = fighter
+  const { id, ...rest } = fighter
 
   Object.keys(rest).forEach(prop => {
     prop === 'health' ? (rest[prop] = 100) : (rest[prop] = '')
   })
 
-  let data =
+  const data =
     Object.keys(req.body).length !== Object.keys(rest).length
       ? { ...rest, ...req.body }
       : req.body
@@ -24,7 +23,6 @@ export const createFighterValid = (req, res, next) => {
 }
 
 export const updateFighterValid = (req, res, next) => {
-  // TODO: Implement validatior for fighter entity during update
   let errorsMessage = validate(req.body)
 
   if (Object.keys(req.body).length === 0) errorsMessage += 'Nothing to update'
